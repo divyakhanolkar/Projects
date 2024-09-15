@@ -1,0 +1,12 @@
+# Bankruptcy Prediction
+
+This data-set was obtained here: https://archive.ics.uci.edu/ml/datasets/Taiwanese+Bankruptcy+Prediction
+
+It contains financial indicators about Taiwanese companies (from 1999 to 2009).
+Each row contains 95 such indicators and one 0/1 label (binary classification).
+The label tells whether or not the company went bankrupt.
+
+## Highlights
+
+* The column names are well-descriptive of the features.
+* The data is unbalanced: only around 3% of the companies went bankrupt.
