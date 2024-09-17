@@ -74,6 +74,6 @@ Among all these models, the **LGBMClassifier** consistently outperformed others 
 
 This project successfully demonstrates the use of machine learning techniques to predict bankruptcy with an F1 score of 0.7. By addressing data imbalance through oversampling, performing feature selection, and identifying the best model (LGBMClassifier), the project offers a robust solution for bankruptcy prediction.
 
-## Author
+## Contributors
 
 Developed by Divya Khanolkar, Chi Wen Lee & Yunhan Chiu.
