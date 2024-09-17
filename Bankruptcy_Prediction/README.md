@@ -4,7 +4,7 @@ This project focuses on predicting whether a company will remain solvent or go b
 
 ## Project Overview
 
-Bankruptcy prediction is a crucial task in the financial domain, helping investors, creditors, and management assess the solvency risk of companies. The aim of this project is to develop a robust machine learning classification model to predict bankruptcy based on historical financial data
+Bankruptcy prediction is a crucial task in the financial domain, helping investors, creditors, and management assess the solvency risk of companies. The aim of this project is to develop a robust machine learning classification model to predict bankruptcy based on historical financial data.
 
 ## Dataset
 
