@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project implements an AI-powered **Blog Generation Workflow** that integrates various tools such as **LangChain**, **LangGraph**, and **Streamlit**. The goal is to generate blog posts automatically by first searching the web, summarizing the content, and then using an AI model to write a detailed blog based on that summary. Additionally, a human-in-the-loop feedback mechanism is integrated to refine the blog post based on user input.
+This project implements an AI-powered **Blog Generation Workflow** that integrates various tools such as **LangChain**, **LangGraph**, and **Streamlit**. The goal is to generate blog posts automatically by first searching the web, summarizing the content, and then using a LLM to write a detailed blog based on that summary. Additionally, a human-in-the-loop feedback mechanism is integrated to refine the blog post based on user input.
 
 ## Approach
 
