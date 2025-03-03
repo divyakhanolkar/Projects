@@ -9,15 +9,15 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
-# 🟢 Set up API Keys
+# Set up API Keys
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
 os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
 
-# 🟢 Initialize Open-Source LLM
+# Initialize Open-Source LLM
 llm = ChatGroq(model="qwen-2.5-32b", temperature=0.7)
 
-# 🟠 Define Graph Nodes
+# Define Graph Nodes
 
 @traceable  # LangSmith debugging
 def fetch_data(state):
@@ -105,7 +105,7 @@ def collect_feedback(state):
 
     return state
 
-# 🟠 Define LangGraph Workflow
+# Define LangGraph Workflow
 workflow = StateGraph(dict)
 workflow.add_node("fetch_data", fetch_data)
 workflow.add_node("process_data", process_data)
@@ -124,7 +124,7 @@ workflow.add_edge("collect_feedback", END)  # End the loop after feedback collec
 # Compile graph
 app = workflow.compile()
 
-# 🟠 Streamlit UI for Feedback
+# Streamlit UI for Feedback
 st.set_page_config(page_title="Orchestrator & Synthesizer Workflow", page_icon="🤖")
 st.title("🤖 Orchestrator & Synthesizer Workflow with LangGraph & Streamlit")
 
